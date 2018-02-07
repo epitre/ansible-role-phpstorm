@@ -1,5 +1,6 @@
 ---
 
-phpstorm_version: 10.0.2
+phpstorm_version: 2017.3.4
 phpstorm_install_dir: /opt
+phpstorm_symlink_dir: /opt/phpstorm
 phpstorm_bin: /usr/local/bin/phpstorm

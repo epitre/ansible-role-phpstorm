@@ -23,7 +23,13 @@
     mv {{ phpstorm_install_dir }}/PhpStorm-* {{ phpstorm_dir }}
     creates="{{ phpstorm_dir }}"
 
-- name: Create symlink
+- name: Create dir symlink
+  file:
+    src={{ phpstorm_dir }}
+    dest={{ phpstorm_symlink_dir }}
+    state=link
+
+- name: Create bin symlink
   file:
     src={{ phpstorm_dir }}/bin/phpstorm.sh
     dest={{ phpstorm_bin }}
